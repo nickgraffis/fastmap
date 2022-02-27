@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "lib": ["es2016"],
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "rootDir": "src",
+    "module": "commonjs",
+    "declaration": true
+  },
+  "include": ["src/**/*.ts"]
+}
