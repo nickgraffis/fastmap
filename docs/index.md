@@ -45,6 +45,7 @@ When the destination value is a string it will represent the path on the destina
 * `name` will set the value of the destination object's `name` property.
 * `name.first` will set the value of the destination object's `name.first` property.
 * `name[]` will set the value of the destination object's `name` property to an array and push the value to the array.
+* `name[\d+]` - If you add a number inside of the brackets it will group properties that have the same number at that point in the path. For example `name[1].type` will be grouped with `name[1].name`. 
 
 ::: tip
 Strings in this format can always be used to set the key of the destination object. Weather you are using the key property of the object or using a function.

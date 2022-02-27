@@ -1,7 +1,7 @@
 const assert = require("assert");
-const { mapper } = require("./dist/index.js");
+const mapper = require("./dist/index.js");
 const browserMapper = require("./dist/index.min.js");
-const { mergeDeep } = require("./dist/mergeDeep")
+const mergeDeep = require("./dist/mergeDeep")
 const output = require("./test-data/output");
 const input = require("./test-data/input");
 const map = require("./test-data/map");

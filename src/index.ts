@@ -2,7 +2,7 @@ import combineSimilarKeysDeep from './combineSimilarKeys';
 import { SwitchBoardPlugins } from './types';
 import { destResolverSwitch } from './utils';
 
-export function mapper<Input, Output>(
+function mapper<Input, Output>(
   input: Input,
   map: { [key: string]: any },
   plugins?: SwitchBoardPlugins

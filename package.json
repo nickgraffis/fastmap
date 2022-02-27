@@ -2,6 +2,7 @@
   "name": "node-starter",
   "version": "0.0.0",
   "main": "dist/index.js",
+  "browser": "dist/nickgraffis-fastmap.min.js",
   "files": [
     "dist"
   ],
