@@ -72,6 +72,18 @@ This can be extreamly useful when you would like to use the value of a key from 
 You cannot have two keys of the same name in an object, so this is how you would perform such a task.
 :::
 
+## TypeScript
+If you are using Typescript you can declare the resulting object in the following way:
+```ts
+type Result = {
+  fullName: string,
+  currentAge: number,
+  city: string,
+}
+
+const result = mapper<Result>(source, map);
+```
+
 
 ## Cookbook
 
