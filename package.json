@@ -2,7 +2,9 @@
   "name": "@nickgraffis/fastmap",
   "version": "0.0.3",
   "main": "dist/index.js",
-  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "browser": "dist/nickgraffis-fastmap.min.js",
   "files": [
     "dist"
