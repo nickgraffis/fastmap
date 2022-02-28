@@ -1,5 +1,5 @@
 {
-  "name": "node-starter",
+  "name": "@nickgraffis/fastmap",
   "version": "0.0.1",
   "main": "dist/index.js",
   "browser": "dist/nickgraffis-fastmap.min.js",
