@@ -10,6 +10,8 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
+    "preversion": "./preversion.sh",
+    "version": "./version.sh",
     "build": "tsc",
     "rollup": "rollup -c",
     "test": "jest",

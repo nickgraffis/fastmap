@@ -1,7 +1,4 @@
-import { mapper } from '../src/index';
-import input from '../test-data/input';
-import map from '../test-data/map';
-import output from '../test-data/output';
+import { mapper } from './dist';
 
 const source = {
   name: 'Nick Graffish',
@@ -10,6 +7,17 @@ const source = {
   address: '123 Main St',
   zip: '94105',
   phone: '123-456-7890',
+}
+
+type ResponseType = {
+  first_name: string,
+  last_name: string,
+  address: {
+    city: string,
+    state: string,
+    street: string,
+    zip: string,
+  }
 }
 
 // Map
@@ -35,10 +43,4 @@ const responseTwo = {
   }
 }
 
-test('should map properly', () => {
-  expect(mapper(input, map)).toStrictEqual(output);
-});
-
-test('should map properly two', () => {
-  expect(mapper(source, mapTwo)).toStrictEqual(responseTwo);
-});
+const response = mapper<ResponseType>(source, mapTwo);

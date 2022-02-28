@@ -1,6 +1,6 @@
 import dotNotationToObject from './dotNotationToObject';
 import getValueFromObject from './getValueFromObject';
-import mergeDeep from './mergeDeep';
+import { mergeDeep } from './mergeDeep';
 import { DestinationObject } from './types';
 
 export function destResolverSwitch(

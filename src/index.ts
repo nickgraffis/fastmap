@@ -2,8 +2,8 @@ import combineSimilarKeysDeep from './combineSimilarKeys';
 import { SwitchBoardPlugins } from './types';
 import { destResolverSwitch } from './utils';
 
-function mapper<Input, Output>(
-  input: Input,
+export function mapper<Output>(
+  input: any,
   map: { [key: string]: any },
   plugins?: SwitchBoardPlugins
 ) {
@@ -14,5 +14,3 @@ function mapper<Input, Output>(
 
   return combineSimilarKeysDeep(output) as Output;
 }
-
-export default mapper

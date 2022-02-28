@@ -1,6 +1,6 @@
 import { isObject } from './isObject';
 
-function mergeDeep(target: any, ...sources: any[]): any {
+export function mergeDeep(target: any, ...sources: any[]): any {
   if (!sources.length) return target;
   const source = sources.shift();
 
@@ -19,5 +19,3 @@ function mergeDeep(target: any, ...sources: any[]): any {
 
   return mergeDeep(target, ...sources);
 }
-
-export default mergeDeep;
