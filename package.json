@@ -1,6 +1,6 @@
 {
   "name": "@nickgraffis/fastmap",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/index.js",
   "private": false,
   "browser": "dist/nickgraffis-fastmap.min.js",
