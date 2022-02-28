@@ -4,7 +4,7 @@
 ## Getting Started
 ### Installation
 ```bash
-npm install @nickgraffish/fast-map
+npm install @nickgraffish/fastmap
 ```
 
 ## Basic Usage
