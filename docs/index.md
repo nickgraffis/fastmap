@@ -190,8 +190,8 @@ const result = {
   city: 'San Francisco',
 }
 ```
-
-#### Create an array of objects based on many source keys
+### An array of objects
+**Create an array of objects based on many source keys**
 
 ```js
 const source = {
@@ -269,3 +269,20 @@ const result = {
   ]
 }
 ```
+
+### Merge Objects
+**After you have created your destination object, merge it with an additional object that matches the destination object.**
+
+```ts
+import { mapper } from '@nickgraffish/fastmap';
+import { mergeDeep } from '@nickgraffish/fastmap/mergeDeep';
+type DatabaseObjectType = { ... }
+const source = { ... };
+const databaseObject: DatabaseObjectType = { ... }
+const map = { ... };
+
+const result = mapper<DatabaseObjectType>(source, map);
+const mergedResult = mergeDeep(result, databaseObject);
+```
+
+Merge deep is what is used in the mapper function as the merge strategy. It will merge recursively and concatenate arrays.
